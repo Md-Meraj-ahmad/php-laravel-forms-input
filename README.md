@@ -1,119 +1,66 @@
-#  Php - Laravel - Using Forms And Gathering Input - Industry
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-## Overview
+<p align="center">
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
-This is a simple Laravel application that demonstrates how to work with forms and gather user input. The application includes the following features:
+## About Laravel
 
-- Creating and handling forms.
-- Validating user input.
-- Storing form data in a database.
-- Displaying validation errors to users.
-- CSRF protection for form submissions.
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-## Features
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-- **Form Creation**: Easily create forms to gather data from users.
-- **Input Validation**: Automatically validate form data to ensure correctness.
-- **Error Handling**: Display user-friendly error messages for invalid input.
-- **Database Integration**: Store and manage form submissions in a database (MySQL or SQLite).
-- **CSRF Protection**: Built-in protection against cross-site request forgery attacks.
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Installation
+## Learning Laravel
 
-### Prerequisites
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-- PHP >= 7.4
-- Composer
-- Laravel >= 8.x
-- MySQL or SQLite (for database)
+You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
-### Installation Steps
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/yourusername/laravel-forms-input.git
-   ```
+## Laravel Sponsors
 
-2. **Navigate to the project directory**:
-   ```bash
-   cd laravel-forms-input
-   ```
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
 
-3. **Install the required dependencies**:
-   Run the following command to install the necessary PHP packages:
-   ```bash
-   composer install
-   ```
+### Premium Partners
 
-4. **Set up the environment file**:
-   Copy the `.env.example` file to `.env`:
-   ```bash
-   cp .env.example .env
-   ```
-
-5. **Generate the application key**:
-   Run the command to generate the Laravel application key:
-   ```bash
-   php artisan key:generate
-   ```
-
-6. **Configure the database**:
-   Open the `.env` file and set up the correct database credentials:
-   ```ini
-   DB_CONNECTION=mysql
-   DB_HOST=127.0.0.1
-   DB_PORT=3306 //Use own your PORT
-   DB_DATABASE=mydb
-   DB_USERNAME=your_username
-   DB_PASSWORD=your_password
-   ```
-
-7. **Run database migrations**:
-   Set up the database tables by running:
-   ```bash
-   php artisan migrate
-   ```
-
-8. **Start the development server**:
-   Now, start the Laravel development server:
-   ```bash
-   php artisan serve
-   ```
-
-   Your application should now be running at `http://localhost:8000`.
-
-## Usage
-
-Once the application is up and running, you can access it at `http://localhost:8000`.
-
-- **Form Handling**: The main feature of the app is the form, where users can enter their data (e.g., name, email, etc.).
-- **Validation**: If the input is invalid, users will see error messages explaining what needs to be fixed (e.g., "Email is required" or "Name must be a string").
-- **Storing Data**: Upon successful form submission, the data will be stored in the database.
-  
-### Example Flow
-
-1. **Visit the form page**: Access the form where you can input data.
-2. **Fill out the form**: Enter valid data, then submit the form.
-3. **View stored data**: After submission, you can check the database to see the data stored.
-4. **Error handling**: If you enter invalid data, you'll be shown clear error messages and the form will be pre-filled with your original input so you can correct it.
-
-## Code Structure
-
-- **Controllers**: The logic for handling form submissions and validation is located in `app/Http/Controllers/RegisterController.php`.
-- **Routes**: All form-related routes are defined in `routes/web.php`.
-- **Views**: The form and its validation errors are rendered in Blade views located in `resources/views/auth/register.blade.php`.
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[WebReinvent](https://webreinvent.com/)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
+- **[Jump24](https://jump24.co.uk)**
+- **[Redberry](https://redberry.international/laravel/)**
+- **[Active Logic](https://activelogic.com)**
+- **[byte5](https://byte5.de)**
+- **[OP.GG](https://op.gg)**
 
 ## Contributing
 
-We welcome contributions to improve the project. If you'd like to contribute:
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature-branch`)
-3. Make your changes and commit them (`git commit -am 'Add new feature'`)
-4. Push your changes (`git push origin feature-branch`)
-5. Create a Pull Request
+## Code of Conduct
 
-## Acknowledgements
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-- **Laravel**: The powerful PHP framework used to build this application.
-- **The Laravel Community**: For their continuous support and improvement of the framework.
+## Security Vulnerabilities
+
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+
+## License
+
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
